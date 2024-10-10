@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>modal</title>
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script async src="script.js"></script>
+
+</head>
+
+<body>
+    
+    <header class="p-4 border-1 border-success border-bottom">
+        <h1 class="text-success text-center">Learning bootstrap with me</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light ps-3">
+
+        <a href="index.html" class="navbar-brand">
+            <img src="imageFolder/hompageLogo.png" alt="homepage logo" class="rounded-pill">
+        </a>
+
+        <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#collapsibleNavbar">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class=" justify-content-around collapse navbar-collapse" id="collapsibleNavbar">
+
+            <ul class="navbar-nav justify-content-around">
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">homepage</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">container</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">another lektion</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Container Layout</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">container</a></li>
+                        <li><a href="#" class="dropdown-item">container-fluid</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="typography.html" class="nav-link">typography</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="table.html" class="nav-link">table</a>
+                </li>
+
+                <li class="nav-item"><a href="alert.html" class="nav-link">alert</a></li>
+                <li class="nav-item"><a href="button.html" class="nav-link">button</a></li>
+
+                <li class="nav-item"><a href="progressbar.html" class="nav-link">progressbar</a></li>
+                <li class="nav-item"><a href="modal.html" class="nav-link">modal</a></li>
+
+            </ul>
+
+        </div>
+
+
+    </nav>
+
+    <div class="container-fluid">
+
+       <div class="row">
+
+            <nav class="col-md-3 col-lg-2 bg-light p-3">
+
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item"><a href="#basicSlideShow" class="nav-link" data-bs-toggle="pill">basic slide show</a></li>
+                    
+                </ul>
+            </nav>
+
+            <div class="col-md-9 col-lg-10 content">
+
+                <div class="tab-content">
+
+                    <div class="tab-pane fade show active p-3" id="basicSlideShow">
+
+                        <div class="bg-light p-3 mb-3">
+                            <p>using container with class <code>carousel slide</code> and add in a <code>id</code>, then attribut <code>data-bs-ride="carousel"</code></p>
+                            <p>this container includes children containers with class <code> carousel-indicators, carousel-inner</code> and two <code>button</code></p>
+
+                            <code>carousel-indicators</code>
+                            <ul>
+                                <li><code>button</code> with <code>type="button" data-bs-target="id", data-bs-slide-to="0", class="active"</code></li>                              
+                            </ul>
+
+                            <code>carousel-inner</code>
+                            <ul>
+                                <li><code>div</code> with <code>carousel-item active</code></li>
+                            </ul>
+
+                            <p><code>button</code> with <code>type="button" data-bs-target="id" class="carousel-control-prev" data-bs-slide="prev"</code> and <code>span</code> with class <code>carousel-control-prev-icon</code></p>
+                            <p><code>button</code> with <code>type="button" data-bs-target="id" class="carousel-control-next" data-bs-slide="next"</code> and <code>span</code> with class <code>carousel-control-next-icon</code></p>
+                        
+                            <p>we also add or align the carousel-caption by adding a <code>div</code> with class <code>carousel-caption</code> with in <code>carousel-item</code></p>
+                        </div>
+                        <div class="bg-light p-3 mb-3">
+                           
+                            <div class="carousel slide" id="slideShow" data-bs-ride="carousel">
+                                <!-- indicators dot -->
+                                <div class="carousel-indicators">
+
+                                    <!-- if we do not add the class "active", it does not work -->
+                                    <button 
+                                        type="button" 
+                                        data-bs-target="#slideShow" 
+                                        data-bs-slide-to="0"
+                                        class="active">
+                                    </button>
+
+                                    <button 
+                                        type="button" 
+                                        data-bs-target="#slideShow" 
+                                        data-bs-slide-to="1">
+                                    </button>
+
+                                    <button 
+                                        type="button" 
+                                        data-bs-target="#slideShow" 
+                                        data-bs-slide-to="2">
+                                    </button>
+
+                                </div>
+
+                                <!-- carousel-inner/slideshow -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="imageFolder/grass-7487114_640.jpg" alt="grass Slide" class="d-block w-100"  >
+
+                                        <div class="carousel-caption">
+                                            <h4>chill with grass</h4>
+                                            <p>let chill with grass</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="imageFolder/mountains-100367_640.jpg" alt="moutainFoto" class="d-block w-100" >
+                                        <div class="carousel-caption">
+                                            <h4>chill with moutain in the afternoon</h4>
+                                            <p>let chill with moutain in the afternoon</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="imageFolder/road-3186188_640.jpg" alt="roadFoto" class="d-block w-100" >
+                                        <div class="carousel-caption">
+                                            <h4>the road i want to ride</h4>
+                                            <p>the road i wanno ride with my friends</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button 
+                                    type="button" 
+                                    class="carousel-control-prev" 
+                                    data-bs-target="#slideShow" 
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+
+                                <button 
+                                    type="button"
+                                    class="carousel-control-next"
+                                    data-bs-target="#slideShow"
+                                    data-bs-slide="next"
+                                >
+                                <span class="carousel-control-next-icon"></span>
+                                </button>
+
+                            </div>
+                          
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+       </div>
+        
+    </div>
+</body>
+</html>

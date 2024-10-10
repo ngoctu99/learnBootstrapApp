@@ -1,0 +1,45 @@
+:root {
+    --link-item-background-color: rgb(42, 175, 42);
+    --link-item-text-color: white;
+}
+
+.navbar {
+    padding-left: 1rem;
+}
+.nav-item:hover{
+
+    background-color: var(--link-item-background-color);
+    color: var(--link-item-text-color);
+    border-radius: 0.3rem;
+}
+
+.rounded-pill{
+    width: 40px;
+}
+
+.dropdown-item:active, .dropdown-item:focus, .dropdown-item:hover{
+
+    background-color: var(--link-item-background-color) !important;
+    color: var(--link-item-text-color) !important;
+
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.nav-link:hover {
+    color: var(--link-item-text-color) !important;
+}
+
+.tab-pane {
+    background-color: rgb(231, 233, 235);
+    border-radius: 0.8rem;
+}
+
+/* modify background color of popover  */
+
+.popover-body {
+    background-color: green;
+    color: whitesmoke !important;
+}

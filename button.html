@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>button</title>
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script async src="script.js"></script>
+
+</head>
+
+<body>
+    
+    <header class="p-4 border-1 border-success border-bottom">
+        <h1 class="text-success text-center">Learning bootstrap with me</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light ps-3">
+
+        <a href="index.html" class="navbar-brand">
+            <img src="imageFolder/hompageLogo.png" alt="homepage logo" class="rounded-pill">
+        </a>
+
+        <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#collapsibleNavbar">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class=" justify-content-around collapse navbar-collapse" id="collapsibleNavbar">
+
+            <ul class="navbar-nav justify-content-around">
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">homepage</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">container</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">another lektion</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Container Layout</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">container</a></li>
+                        <li><a href="#" class="dropdown-item">container-fluid</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="typography.html" class="nav-link">typography</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="table.html" class="nav-link">table</a>
+                </li>
+
+                <li class="nav-item"><a href="alert.html" class="nav-link">alert</a></li>
+                <li class="nav-item"><a href="button.html" class="nav-link">button</a></li>
+
+                <li class="nav-item"><a href="progressbar.html" class="nav-link">progressbar</a></li>
+
+                <li class="nav-item"><a href="slideshow.html" class="nav-link">slideshow</a></li>
+                <li class="nav-item"><a href="modal.html" class="nav-link">modal</a></li>
+            </ul>
+
+        </div>
+
+
+    </nav>
+
+    <div class="container-fluid">
+
+       <div class="row">
+
+            <nav class="col-md-3 col-lg-2 bg-light p-3">
+
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item"><a href="#buttonStyles" class="nav-link" data-bs-toggle="pill">button style</a></li>
+                    <li class="nav-item"><a href="#buttonOutline" class="nav-link" data-bs-toggle="pill">button ouline</a></li>
+                    <li class="nav-item"><a href="#buttonSize" class="nav-link" data-bs-toggle="pill">buttonSize</a></li>
+                    <li class="nav-item"><a href="#blockLevelButton" class="nav-link" data-bs-toggle="pill">block level button</a></li>
+                    <li class="nav-item"><a href="#disable-activeButton" class="nav-link" data-bs-toggle="pill">active-disable</a></li>
+                    <li class="nav-item"><a href="#spinnerButton" class="nav-link" data-bs-toggle="pill">spinner button</a></li>
+                </ul>
+            </nav>
+
+            <div class="col-md-9 col-lg-10 content">
+
+                <div class="tab-content">
+
+                    <div class="tab-pane fade show active p-3" id="buttonStyles">
+
+                        <h6> boostrap provide many different Button</h6>
+
+                        <ul>
+                            <li><code>btn-primary</code></li>
+                            <li><code>btn-secondary</code></li>
+                            <li><code>btn-info</code></li>
+                            <li><code>btn-danger</code></li>
+                            <li><code>btn-danger</code></li>
+                            <li><code>btn-light</code></li>
+                            <li><code>btn-dark</code></li>
+                            <li><code>btn-success</code></li>
+                            <li><code>btn-warning</code></li>
+                            <li><code>btn-link</code></li> 
+                        </ul>
+
+                        <button type="button" class="btn btn-primary">click</button>
+                        <button type="button" class="btn btn-secondary">click</button>
+                        <button type="button" class="btn btn-info">click</button>
+                        <button type="button" class="btn btn-danger">click</button>
+                        <button type="button" class="btn btn-light">click</button>
+                        <button type="button" class="btn btn-dark">click</button>
+                        <button type="button" class="btn btn-success">click</button>
+                        <button type="button" class="btn btn-warning">click</button>
+                        <button type="button" class="btn btn-link">click</button>
+
+                    </div>
+
+                    <div class="tab-pane fade p-3" id="buttonOutline">
+                        <h6> boostrap provide many different outline Button</h6>
+
+                        <ul>
+                            <li><code>btn-outline-primary</code></li>
+                            <li><code>btn-outline-secondary</code></li>
+                            <li><code>btn-outline-info</code></li>
+                            <li><code>btn-outline-danger</code></li>
+                            <li><code>btn-outline-danger</code></li>
+                            <li><code>btn-outline-light</code></li>
+                            <li><code>btn-outline-dark</code></li>
+                            <li><code>btn-outline-success</code></li>
+                            <li><code>btn-outline-warning</code></li>
+                            <li><code>btn-outline-link</code></li> 
+                        </ul>
+
+                        <button type="button" class="btn btn-outline-primary">click</button>
+                        <button type="button" class="btn btn-outline-secondary">click</button>
+                        <button type="button" class="btn btn-outline-info">click</button>
+                        <button type="button" class="btn btn-outline-danger">click</button>
+                        <button type="button" class="btn btn-outline-light">click</button>
+                        <button type="button" class="btn btn-outline-dark">click</button>
+                        <button type="button" class="btn btn-outline-success">click</button>
+                        <button type="button" class="btn btn-outline-warning">click</button>
+                        <button type="button" class="btn btn-outline-link">click</button>
+                    </div>
+
+                    <div class="tab-pane fade p-3" id="buttonSize">
+                        <h6> boostrap provide many different Button size</h6>
+
+                        <ul>
+                            <li><code>btn-sm</code></li>
+                            <li><code>btn-md</code></li>
+                            <li><code>btn-lg</code></li>
+                            
+                        </ul>
+
+                        <button type="button" class="btn btn-outline-primary btn-sm">click</button>
+                        <button type="button" class="btn btn-outline-secondary btn-md">click</button>
+                        <button type="button" class="btn btn-outline-info btn-lg">click</button>
+                       
+                    </div>
+
+                    <div class="tab-pane fade p-3" id="blockLevelButton">
+                        <h6> boostrap provide also block button with <code>d-grid</code> in the container <code>div</code> outside tag</h6>
+
+                        <div class="d-grid">
+                            <button type="button" class="btn btn-secondary btn-block">block button</button>
+                        </div>
+                       
+                        <h6>if you want the gap between button, then using <code>gap-*</code> in container <code>div</code> outside tag</h6>
+
+                        <div class="d-grid gap-3">
+
+                            <button type="button" class="btn btn-secondary btn-block">block button</button>
+                            <button type="button" class="btn btn-secondary btn-block">block button</button>
+                            <button type="button" class="btn btn-secondary btn-block">block button</button>
+
+                        </div>
+
+                
+                    </div>
+
+                    
+
+                    <div class="tab-pane fade p-3" id="disable-activeButton">
+                        <h6> button will be disable to click with attribute<code>disabled</code>, but with <code>a tag</code> we use class <code>disable</code></h6>
+
+                        <button type="button" disabled class="btn btn-danger">disable button</button>
+                        <button type="button" class="btn btn-dark active">active button</button>
+
+                        <a href="#" role="button" class="disabled btn btn-warning">button with <code>a</code> tag</a>
+                
+                    </div>
+
+                    <div class="tab-pane fade p-3" id="spinnerButton">
+                        <h6>we can also add a spinner into a button</h6>
+
+                        <div class="bg-light p-2 mb-3">
+                            <p>normal spinner with <code>span</code> with class <code>spinner-border</code> and <code>spinner-border-sm</code></p>
+                            <button type="button" class="btn btn-secondary">
+                                <span class="spinner-border spinner-border-sm"></span>
+                            </button>
+    
+                            <button type="button" class="btn btn-success">
+                                <span class="spinner-border spinner-border-sm"></span> loading
+                            </button>
+    
+                            <button type="button" class="btn btn-warning" disabled>
+                                <span class="spinner-border spinner-border-sm"></span> click unable
+                            </button>
+                        </div>
+                       <div class="bg-light p-2 mb-3">
+
+                            <h6>we can create a normal spinner in tag <code>div, span</code> with class <code>spinner-border</code></h6>
+
+                            <div class="spinner-border"></div>
+                       </div>
+
+                       <div class="bg-light p-2 mb-3">
+                            <h6>Use any <strong>text color utilites</strong> to add a color to the spinner with class <code>text-muted, text-primary,...</code></h6>
+                            <div class="spinner-border text-muted"></div>
+                            <div class="spinner-border text-primary"></div>
+                            <div class="spinner-border secondary"></div>
+                            <div class="spinner-border warning"></div>
+                            <div class="spinner-border text-info"></div>
+                            <div class="spinner-border text-success"></div>
+                            <div class="spinner-border text-light"></div>
+                        </div>
+
+                        <div class="bg-light p-2 mg-3">
+                            <h6>we can also use spinner or loader to grow instead of spin with <code>spinner-grow</code></h6>
+
+                            <div class="spinner-grow text-muted"></div>
+                            <div class="spinner-grow text-secondary"></div>
+                            <div class="spinner-grow text-success"></div>
+                            <div class="spinner-grow text-warning"></div>
+                            <div class="spinner-grow text-danger"></div>
+                            <div class="spinner-grow text-info"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+       </div>
+        
+    </div>
+</body>
+</html>

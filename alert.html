@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Navbar</title>
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script async src="script.js"></script>
+
+</head>
+
+<body>
+    
+    <header class="p-4 border-1 border-success border-bottom">
+        <h1 class="text-success text-center">Learning bootstrap with me</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light ps-3">
+
+        <a href="index.html" class="navbar-brand">
+            <img src="imageFolder/hompageLogo.png" alt="homepage logo" class="rounded-pill">
+        </a>
+
+        <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#collapsibleNavbar">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class=" justify-content-around collapse navbar-collapse" id="collapsibleNavbar">
+
+            <ul class="navbar-nav justify-content-around">
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">homepage</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">container</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">another lektion</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Container Layout</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">container</a></li>
+                        <li><a href="#" class="dropdown-item">container-fluid</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="typography.html" class="nav-link">typography</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="table.html" class="nav-link">table</a>
+                </li>
+
+                <li class="nav-item"><a href="alert.html" class="nav-link">alert</a></li>
+                <li class="nav-item"><a href="button.html" class="nav-link">button</a></li>
+                <li class="nav-item"><a href="progressbar.html" class="nav-link">progressbar</a></li>
+                <li class="nav-item"><a href="slideshow.html" class="nav-link">slideshow</a></li>
+                <li class="nav-item"><a href="modal.html" class="nav-link">modal</a></li>
+
+            </ul>
+
+        </div>
+
+
+    </nav>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 bg-light p-3">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item"><a href="#alert" class="nav-link" data-bs-toggle="pill">alert</a></li>
+                    <li class="nav-item"><a href="#alertLink" class="nav-link" data-bs-toggle="pill">alert-link</a></li>
+                    <li class="nav-item"><a href="#alertClosing" class="nav-link" data-bs-toggle="pill">alert-closing</a></li>
+                    <li class="nav-item"><a href="#alertAnimation" class="nav-link" data-bs-toggle="pill">alert-animation</a></li>
+                </ul>
+            </nav>
+            
+            <div class="col-md-9 col-lg-10 content">
+
+                <div class="tab-content">
+
+                    <div class="tab-pane fade show active" id="alert">
+                        <h5 class="display-5">
+                            Bootstrap 5 provide an easy way to create predefine alert messages
+                        </h5>
+    
+                        <div class="container mt-2">
+    
+                            <h6>Success alert with class <code>alert, alert-success</code></h6>
+    
+                            <div class="alert alert-success p-4">
+                                <strong>alert-success</strong> using to indicate a positive or successful action
+                            </div>
+    
+                            <h6>Info alert with class <code>alert, alert-info</code></h6>
+    
+                            <div class="alert alert-info p-4">
+                                <strong>alert-info</strong> unsing to indicate a important action, which user need to aufpassen
+                            </div>
+    
+                            <h6>Danger alert with class <code>alert, alert-danger</code></h6>
+    
+                            <div class="alert alert-danger p-4">
+                                <strong>alert-danger</strong> using to indicate a negative Action or unexpected following action
+                            </div>
+    
+                            <div class="alert alert-warning p-4">
+                                <strong>alert-warning</strong> using to indicate a dangerous or potentially negative action
+                            </div>
+    
+                            <h6>Primary alert with class <code>alert-primary</code></h6>
+    
+                            <div class="alert alert-primary p-4">
+                                <strong>alert-primary</strong> using to indicate a so important Action
+                            </div>
+    
+                            <h6>Secondary alert with class <code>alert-secondary</code></h6>
+    
+                            <div class="alert alert-secondary p-4">
+                                <strong>alert-secondary</strong> using to indicate a ...
+                            </div>
+    
+                            <h6>alert-dark with class <code>alert-dark</code></h6>
+    
+                            <div class="alert alert-dark p-4">
+                                <strong>alert-dark</strong> using to indicate ...
+                            </div>
+    
+                            <h6>alert-dark with class <code>alert-light</code></h6>
+    
+                            <div class="alert alert-light p-4">
+                                <strong>alert-light</strong> using to indicate ...
+                            </div>
+                        </div>
+                    </div>
+    
+                    
+                    <div class="tab-pane fade" id="alertLink">
+    
+                        <div class="container mt-2"></div>
+    
+    
+                            <div class="alert alert-success p-4">
+                                <strong>alert-success</strong> click to follow this link <a href="#" class="alert-link">you should read this message</a>
+                            </div>
+    
+                            <div class="alert alert-info p-4">
+                                <strong>alert-info</strong> click to follow this link <a href="#" class="alert-link">you should read this message</a>
+                            </div>
+    
+                            <div class="alert alert-danger p-4">
+                                <strong>alert-danger</strong>click to follow this link <a href="#" class="alert-link">you should read this message</a>
+                            </div>
+    
+                            <div class="alert alert-warning p-4">
+                                <strong>alert-warning</strong> click to follow this link <a href="#" class="alert-link">you should read this message</a>
+                            </div>
+    
+                            <div class="alert alert-primary p-4">
+                                <strong>alert-primary</strong> click to follow this link <a href="#" class="alert-link">you should read this message</a>
+                            </div>
+    
+                            <div class="alert alert-secondary p-4">
+                                <strong>alert-secondary</strong> click to follow this link <a href="#" class="alert-link">you should read this message</a>
+                            </div>
+    
+                            <div class="alert alert-dark p-4">
+                                <strong>alert-dark</strong> click to follow this link <a href="#" class="alert-link">you should read this message</a>
+                            </div>
+    
+                            <div class="alert alert-light p-4">
+                                <strong>alert-light</strong> click to follow this link <a href="#" class="alert-link">you should read this message</a>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="tab-pane fade" id="alertClosing">
+                        <h6> add class <code>alert-dismissible</code> to the alert <code>div</code> and class <code>btn-close</code> and class <code>data-bs-dismiss="alert"</code></h6>
+
+                        <div class="container mt-2">
+
+                            <div class="alert alert-success alert-dismissible fade show">
+                                <strong>you can close this alert with x </strong>
+                                <a href="" class="btn-close" data-bs-dismiss="alert" role="button"></a> 
+                            </div>
+
+                            <div class="alert alert-dismissible alert-info fade show">
+                                <strong>do it again</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+                        </div>
+
+                    </div>
+    
+                    <div class="tab-pane fade" id="alertAnimation"></div>
+
+                
+        </div>      
+    </div>
+</body>
+</html>
