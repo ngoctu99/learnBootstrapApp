@@ -96,9 +96,10 @@
             <nav class="col-md-3 col-lg-2 bg-light p-3">
 
                 <ul class="nav nav-pills flex-column">
-                    <li class="nav-item"><a href="#stackedForm" class="nav-link" data-bs-toggle="pill">stacked form</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="pill"></a></li>
-                    
+                    <li class="nav-item"><a href="#stackedForm" class="nav-link" data-bs-toggle="pill">Forms</a></li>
+                    <li class="nav-item"><a href="#selectMenu" class="nav-link" data-bs-toggle="pill">Select menus</a></li>
+                    <li class="nav-item"><a href="#checkAndRadio" class="nav-link" data-bs-toggle="pill">Check and Radio</a></li>
+                    <li class="nav-item"><a href="#formRange" class="nav-link" data-bs-toggle="pill">Range</a></li>
                 </ul>
             </nav>
 
@@ -110,7 +111,7 @@
 
                         <h4 class="mb-3">how to create <code>form</code>?</h4>
 
-                        <p>use class <code>.d-flex</code> to create a container with flexbox</p>
+                        <p>use class <code>.form-control</code> into an <code>input</code> and class <code>form-label</code> in each <code>laber</code></p>
 
                         <div class="bg-light p-3 mb-3">
                             <h3>Stacked form</h3>
@@ -139,120 +140,245 @@
                                         >
                                 </div>
 
-                                <button 
+                                <div class="d-flex justify-content-center align-content-center">
+                                    <button 
                                     type="submit"
                                     class="btn btn-primary"
                                 >submit</button>
+                                </div>
+                               
                             </form>
                            
                         </div>
+
+                        <div class="p-3 bg-light mb-3 container-fluid">
+
+                            <h4 class="mb-3"></h4>
+
+                            <p>Using class <code>.form-control</code> inside tag <code>&lt;textarea&gt;</code> to style textareas as well</p>
+
+                            <form action="">
+
+                                <label for="commentField" class="form-label">Please comment hier:</label>
+
+                                <textarea 
+                                    name="commentArea" 
+                                    id="commentField"
+                                    class="form-control"
+                                    rows="5"
+                                    >
+                                
+                                </textarea>
+
+                                <div class="d-flex justify-content-center align-content-center ">
+                                    <button
+                                    type="submit"
+                                    class="btn btn-primary mt-3"
+
+                                >submit</button>
+                                </div>
+                               
+                            </form>
+
+                        </div>
+
+                        <div class="p-3 bg-light mb-3 container-fluid">
+
+                            <h4 class="mb-3">Form Inline</h4>
+                            <p>use <b>gridlayout</b> to create a form inline</p>
+
+                            <form action="">
+
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-3">
+                                        <label for="inputInline" class="form-label">Input Inline:</label>
+                                        <input 
+                                        type="text"
+                                        class="form-control"
+                                        id="inputInline"
+                                        placeholder="input inline"
+                                        name="inputInlineLeft"
+                                        >
+                                    </div>
+    
+                                    <div class="col-sm-6 col-md-9">
+                                        <label for="inputInlineRight" class="form-label">Input Inline:</label>
+                                        <input 
+                                            type="text"
+                                            id="inputInlineRight"
+                                            class="form-control"
+                                            placeholder="inputInline"
+                                            name="inputInlineRight"
+                                            >
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+
+                        <div class="p-3 bg-light mb-3 container-fluid">
+                            <h4 class="mb-3">Form size control</h4>
+                            <p>modify the size of form with class <code>form-control-sm|md|lg|xl|xxl</code></p>
+
+                            <input 
+                                class="form-control form-control-sm mb-3"
+                                placeholder="form-control-sm"
+                                type="text">
+
+                            <input type="text"
+                                class="form-control form-control-md mb-3"
+                                placeholder="form-control-md"
+                            >
+
+                            <input 
+                                type="text"
+                                class="form-control form-control-lg"
+                                placeholder="form-control-lg">
+
+                        </div>
+
+                        <div class="p-3 bg-light mb-3 container-fluid">
+                            <h4 class="mb-3">Color Picker</h4>
+                            <p>chose <code>"type=color"</code> and add class <code>form-control-color</code> into a <b>input</b> to create a color picker</p>
+
+                            <label for="colorPicker" class="form-label">Click to chose a color:</label>
+                            <input 
+                                id="colorPicker"
+                                class="form-control form-control-color mb-3"
+                                placeholder="form-control-sm"
+                                type="color">
+
+                        </div>
                     </div>
 
-                    <div class="tab-pane fade p-3" id="flexDirection">
+                    <div class="tab-pane fade p-3" id="selectMenu">
                         
-                        <p>by default flex item will be displayed horizontally, we can also add class <code>.flex-row</code></p>
-                        <div class="d-flex flex-row bg-light p-5 mb-2">
-                            <div class="p-2 bg-secondary text-light text-center">ITEM1</div>
-                            <div class="p-2 bg-danger text-light text-center">ITEM2</div>
-                            <div class="p-2 bg-success text-light text-center">ITEM3</div>
-                        </div>
+                       <p>Using class <code>form-select</code> inside tag <code>select</code> to create a form select.</p>
+                       <div class="bg-light mb-3 p-3 border-start border-success">
+                            <form action="">
 
-                        <p>use class <code>.flex-row-reverse</code> to right align flex item</p>
-                        <div class="d-flex flex-row-reverse bg-light p-5 mb-2">
-                            <div class="p-2 bg-secondary text-light text-center">ITEM1</div>
-                            <div class="p-2 bg-danger text-light text-center">ITEM2</div>
-                            <div class="p-2 bg-success text-light text-center">ITEM3</div>
-                        </div>
+                                <label for="selectForm" class="form-label"></label>
+                                <select name="selectItem" id="selectForm" class="form-select mb-3">
+                                   <option value="option1">item1</option>
+                                   <option value="option2">item2</option> 
+                                   <option value="option3">item3</option> 
+                                </select>
 
-                        <p>use class <code>.flex-column</code> to align flex item vertically</p>
+                                <div class="d-flex justify-content-center align-content-center">
+                                    <button type="submit" class="btn btn-primary">submit</button>
+                                </div>
+                            </form>
+                       </div>
 
-                        <div class="d-flex flex-column bg-light p-5 mb-2">
-                            <div class="p-2 bg-secondary text-light text-center">ITEM1</div>
-                            <div class="p-2 bg-danger text-light text-center">ITEM2</div>
-                            <div class="p-2 bg-success text-light text-center">ITEM3</div>
-                        </div>
+                       <p>Using class <code>form-select-sm|md|lg</code> to modify size of select form.</p>
 
-                        <p>use class <code>.flex-column-reverse</code> to end-align flex item vertically</p>
+                       <div class="bg-light mb-3 p-3 border-start border-success" >
 
-                        <div class="d-flex  flex-column-reverse bg-light p-5 mb-2">
-                            <div class="p-2 bg-secondary text-light text-center">ITEM1</div>
-                            <div class="p-2 bg-danger text-light text-center">ITEM2</div>
-                            <div class="p-2 bg-success text-light text-center">ITEM3</div>
-                        </div>
+                            <select class=" form-select form-select-sm mb-3">
+                                <option value="item1">1</option>
+                            </select>
 
-                        <p>use class <code>justify-content-start|center|end|between|around</code> to align flex item</p>
+                            <select class=" form-select form-select-md mb-3">
+                                <option value="item1">1</option>
+                            </select>
 
-                        <div class="d-flex flex-row justify-content-start bg-light p-5 mb-2">
-                            <div class="p-2 bg-secondary text-light text-center">ITEM1</div>
-                            <div class="p-2 bg-danger text-light text-center">ITEM2</div>
-                            <div class="p-2 bg-success text-light text-center">ITEM3</div>
-                        </div>
+                            <select class=" form-select form-select-lg mb-3">
+                                <option value="item1">1</option>
+                            </select>
+                       </div>
 
-                        <div class="d-flex flex-row justify-content-end bg-light p-5 mb-2">
-                            <div class="p-2 bg-secondary text-light text-center">ITEM1</div>
-                            <div class="p-2 bg-danger text-light text-center">ITEM2</div>
-                            <div class="p-2 bg-success text-light text-center">ITEM3</div>
-                        </div>
+                       <p>using an <code>input</code> with attribute <code>list</code> to add a tag <code>datalist</code> inside.</p>
+                       <div class="bg-light mb-3 p-3 border-start border-success" >
+                            <label for="inputAnimals" class="form-label">List Animals:</label>
+                            <input type="text" name="animals" id="inputAnimals" list="animalList" class="form-control">
 
-                        <div class="d-flex flex-row justify-content-center bg-light p-5 mb-2">
-                            <div class="p-2 bg-secondary text-light text-center">ITEM1</div>
-                            <div class="p-2 bg-danger text-light text-center">ITEM2</div>
-                            <div class="p-2 bg-success text-light text-center">ITEM3</div>
-                        </div>
+                            <datalist id="animalList">
+                                <option value="cat"></option>
+                                <option value="dog"></option>
+                                <option value="cow"></option>
+                            </datalist>
+                       </div>
 
-                        <div class="d-flex flex-row justify-content-between bg-light p-5 mb-2">
-                            <div class="p-2 bg-secondary text-light text-center">ITEM1</div>
-                            <div class="p-2 bg-danger text-light text-center">ITEM2</div>
-                            <div class="p-2 bg-success text-light text-center">ITEM3</div>
-                        </div>
-
-                        <div class="d-flex flex-row justify-content-around bg-light p-5 mb-2">
-                            <div class="p-2 bg-secondary text-light text-center">ITEM1</div>
-                            <div class="p-2 bg-danger text-light text-center">ITEM2</div>
-                            <div class="p-2 bg-success text-light text-center">ITEM3</div>
-                        </div>
-
-                        <p>use class <code>flex-grow-1</code> so that flex-item take the rest of place</p>
-
-                        <div class="d-flex flex-row bg-light p-5 mb-2">
-                            <div class="p-2 bg-secondary text-light text-center">ITEM1</div>
-                            <div class="p-2 bg-danger text-light text-center">ITEM2</div>
-                            <div class="p-2 bg-success text-light text-center flex-grow-1">ITEM3</div>
-                        </div>
-
-                        <p>use class <code>flex-shrink-1</code> to make it schrink as nescessary</p>
-                        <div class="d-flex flex-row bg-light p-5 mb-2">
-                            <div class="p-2 bg-secondary text-light text-center flex-grow-1">ITEM1</div>
-                            <div class="p-2 bg-danger text-light text-center">ITEM2</div>
-                            <div class="p-2 bg-success text-light text-center flex-schrink-1">ITEM3</div>
-                        </div>
-
-                        <p>use class <code>flex-fill</code> to each flex item to set a equal flex-item width</p>
-                        <div class="d-flex flex-row bg-light p-5 mb-2">
-                            <div class="p-2 bg-secondary text-light text-center flex-fill">ITEM1</div>
-                            <div class="p-2 bg-danger text-light text-center flex-fill">ITEM2</div>
-                            <div class="p-2 bg-success text-light text-center flex-fill">ITEM3</div>
-                        </div>
-
-                        <p>class <code>order-[1-5]</code> to order flex-item</p>
-
-                        <div class="d-flex flex-row bg-light p-5 mb-2">
-                            <div class="p-2 bg-secondary text-light text-center flex-fill order-2">ITEM1</div>
-                            <div class="p-2 bg-danger text-light text-center flex-fill order-3">ITEM2</div>
-                            <div class="p-2 bg-success text-light text-center flex-fill order-1">ITEM3</div>
-                            <div class="p-2 bg-danger text-light text-center flex-fill order-4">ITEM4</div>
-                            <div class="p-2 bg-success text-light text-center flex-fill order-5">ITEM5</div>
-                        </div>
-
-                        <p>class <code>align-content-start|end|center|between|around|stretch</code> to vertical align flex-items</p>
                     </div>
 
 
-                    <div class="tab-pane fade p-3" id="popover">
+                    <div class="tab-pane fade p-3" id="checkAndRadio">
+                       <p>using class <code>form-check</code> container to wrap input tag with class <code>form-check-input</code> inside</p>
+
+                       <div class="bg-light mb-3 p-3 border-start border-success" >
+                        
+                        <form action="">
+                            <div class="form-check">
+                                <input type="checkbox" id="checkbox1" name="checkbox1" class="form-check-input" checked>
+                                <label for="checkbox1" class="form-check-label">Item1</label>
+                            </div>
+                                
+                            <div class="form-check">
+                                <input type="checkbox" id="checkbox2" name="checkbox2" class="form-check-input">
+                                <label for="checkbox2" class="form-check-label">Item2</label>
+                            </div>
+                                
+                            <div class="form-check">
+                                <input type="checkbox" id="checkbox3" name="checkbox3" class="form-check-input" disabled>
+                                <label for="checkbox3" class="form-check-label">Item3</label>
+                            </div>
+
+                            <div class="d-flex justify-content-center align-content-center">
+                                <button type="submit" class="btn btn-primary">submit</button>
+                            </div>
+                        </form>
                        
+                            
+                       </div>
+
+                       <p>analog to radio form</p>
+                       <div class="bg-light mb-3 p-3 border-start border-success" >
+                        
+                        <form action="">
+                            <div class="form-check">
+                                <input type="radio" id="checkbox1" name="radioValue" class="form-check-input" checked>
+                                <label for="checkbox1" class="form-check-label">Item1</label>
+                            </div>
+                                
+                            <div class="form-check">
+                                <input type="radio" id="checkbox2" name="radioValue" class="form-check-input">
+                                <label for="checkbox2" class="form-check-label">Item2</label>
+                            </div>
+                                
+                            <div class="form-check">
+                                <input type="radio" id="checkbox3" name="radioValue" class="form-check-input" disabled>
+                                <label for="checkbox3" class="form-check-label">Item3</label>
+                            </div>
+
+                            <div class="d-flex justify-content-center align-content-center">
+                                <button type="submit" class="btn btn-primary">submit</button>
+                            </div>
+                        </form>
+                       
+                            
+                       </div>
+
+                       <p>if you want to usec checkbox like toggle swtch style, then add class <code>form-switch</code> in wrap container</p>
+                       <div class="bg-light mb-3 p-3 border-start border-success" >
+                        
+                        <form action="">
+                            <div class="form-check form-switch">
+                                <input type="checkbox" id="checkboxSwitch" name="checkboxSwitchValue" class="form-check-input" value="yes" checked>
+                                <label for="checkboxSwitch" class="form-check-label">Switch toggle</label>
+                            </div>
+                                
+                           
+
+                            <div class="d-flex justify-content-center align-content-center">
+                                <button type="submit" class="btn btn-primary">submit</button>
+                            </div>
+                        </form>
+                       
+                            
+                       </div>
                     </div>
 
-                    <div class="tab-pane fade p-3" id="offcanva">
+                    <div class="tab-pane fade p-3" id="formRange">
 
                     
  

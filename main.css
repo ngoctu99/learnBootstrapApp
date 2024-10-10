@@ -6,9 +6,16 @@
 .navbar {
     padding-left: 1rem;
 }
-.nav-item:hover{
+.nav-item:hover, .nav-item:focus{
 
     background-color: var(--link-item-background-color);
+    color: var(--link-item-text-color);
+    border-radius: 0.3rem;
+}
+
+/* modify status active of navlink */
+.nav-link.active {
+    background-color: var(--link-item-background-color) !important;
     color: var(--link-item-text-color);
     border-radius: 0.3rem;
 }
